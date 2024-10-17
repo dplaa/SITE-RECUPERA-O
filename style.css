@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #1E1E2F; /* Cinza escuro para o fundo */
+    --primary-color: #C0A46B; /* Dourado suave para destaque */
+    --secondary-color: #8B3A3A; /* Bordô para contraste */
+    --font: "Roboto", sans-serif; /* Fonte limpa e moderna */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+    color: var(--bg-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    margin: 0 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.graficos-container {
+    margin: 3rem;
+    text-align: center;
+}
+
+.grafico {
+    margin-top: 2rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2E2E3F; /* Fundo mais escuro para contraste */
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column; /* Para empilhar elementos verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 6rem; /* Aumentei a altura para acomodar o título */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer h2 {
+    margin: 0; /* Remove a margem padrão do h2 */
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+}
+
+footer p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    font-size: 1rem; /* Tamanho da fonte para o texto */
+}
